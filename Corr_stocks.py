@@ -21,9 +21,8 @@ ret = close.pct_change().dropna()
 
 ret.corr()
 
-'''plt.figure(figsize=(12,8))
+plt.figure(figsize=(12,8))
 sns.set(font_scale=1.4)
 sns.heatmap(ret.corr(), cmap = "Greens_r", annot = True, annot_kws={"size":15}, vmax = 0.6)
-plt.show()'''
+plt.show()
 
-chart = serialize(ret.corr(), render_to='my-chart', output_type='json')
